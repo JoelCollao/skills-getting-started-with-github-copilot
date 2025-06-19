@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
   background-color: #f5f5f5;
@@ -141,4 +141,13 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+/* Nueva clase para los participantes */
+.participant {
+  background-color: #e0f7fa; /* Color de fondo suave */
+  border: 1px solid #80deea; /* Borde más claro */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 5px; /* Espaciado interno */
+  margin-bottom: 5px; /* Espaciado entre participantes */
 }

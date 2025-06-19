@@ -20,11 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const spotsLeft = details.max_participants - details.participants.length;
 
+        // Modificación realizada aquí para incluir participantes
         activityCard.innerHTML = `
           <h4>${name}</h4>
           <p>${details.description}</p>
           <p><strong>Schedule:</strong> ${details.schedule}</p>
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
+          <strong>Participants:</strong> <ul>${details.participants.map(participant => `<li>${participant}</li>`).join('')}</ul> <!-- Nuevas líneas añadidas -->
         `;
 
         activitiesList.appendChild(activityCard);
@@ -68,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       messageDiv.classList.remove("hidden");
+      
 
       // Hide message after 5 seconds
       setTimeout(() => {
